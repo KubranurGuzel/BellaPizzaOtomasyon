@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8209D53D-0198-4659-8E53-129F66DB6FA4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPaneli.Designer.cs">
+      <DependentUpon>adminPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CariYönetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariYönetim.Designer.cs">
+      <DependentUpon>CariYönetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fis.Designer.cs">
+      <DependentUpon>fis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcıEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanıcıEkle.Designer.cs">
+      <DependentUpon>kullanıcıEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriPanel.Designer.cs">
+      <DependentUpon>MusteriPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="siparişİşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparişİşlemleri.Designer.cs">
+      <DependentUpon>siparişİşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokİşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokİşlemleri.Designer.cs">
+      <DependentUpon>stokİşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toptancı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toptancı.Designer.cs">
+      <DependentUpon>toptancı.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminPaneli.resx">
+      <DependentUpon>adminPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CariYönetim.resx">
+      <DependentUpon>CariYönetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fis.resx">
+      <DependentUpon>fis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanıcıEkle.resx">
+      <DependentUpon>kullanıcıEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriPanel.resx">
+      <DependentUpon>MusteriPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="siparişİşlemleri.resx">
+      <DependentUpon>siparişİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokİşlemleri.resx">
+      <DependentUpon>stokİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toptancı.resx">
+      <DependentUpon>toptancı.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\arrow-back-1-icon.png" />
+    <Content Include="Resources\Arrows-icon.png" />
+    <Content Include="Resources\bella-pizza-1.png" />
+    <Content Include="Resources\biz-bize-menu1508923202_1.png" />
+    <Content Include="Resources\chicken-icon.png" />
+    <Content Include="Resources\ekle.png" />
+    <Content Include="Resources\fis.png" />
+    <Content Include="Resources\fis1.png" />
+    <Content Include="Resources\guncelle.png" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\icecek.png" />
+    <Content Include="Resources\iptal_.png" />
+    <Content Include="Resources\name-card-icon.png" />
+    <Content Include="Resources\pizza-icon.png" />
+    <Content Include="Resources\pizza-slice-icon.png" />
+    <Content Include="Resources\pizzacı.jpg" />
+    <Content Include="Resources\Place-selection-icon.png" />
+    <Content Include="Resources\sil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
